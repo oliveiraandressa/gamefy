@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Routes from "./pages/Routes";
+import Sidebar from './components/Sidebar'
+
+import './assets/css/paper-dashboard.css';
+import './assets/css/bootstrap.min.css';
+import './assets/css/demo.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="wrapper">
+      <Sidebar/>
+      <Routes/>
+    </div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
