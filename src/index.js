@@ -5,7 +5,8 @@ import Sidebar from './components/Sidebar'
 
 import './assets/css/paper-dashboard.css';
 import './assets/css/bootstrap.min.css';
-import './assets/css/demo.css';
+import './assets/css/gamefy.css';
+import './assets/css/font-awesome.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
