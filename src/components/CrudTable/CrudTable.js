@@ -3,7 +3,7 @@ import AddModal from '../Modal/Add'
 import Head from './Head';
 import Body from './Body';
 
-function Table(props) {
+function CrudTable(props) {
 
   const [modalShow, setModalShow] = useState(false);
 
@@ -46,4 +46,4 @@ function Table(props) {
   }
 }
 
-export default Table;
+export default CrudTable;

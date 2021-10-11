@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import {Modal, Button} from 'react-bootstrap'
-import CategoryForm from '../../pages/Categories/CategoryForm';
+import {Modal} from 'react-bootstrap'
 import EditModal from '../Modal/Edit'
 import DeleteModal from '../Modal/Delete'
 

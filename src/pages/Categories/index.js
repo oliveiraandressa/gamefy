@@ -1,22 +1,19 @@
-import React from 'react';
-import Sidebar from '../../components/Sidebar'
+import React from 'react'
 import Navbar from '../../components/Navbar'
-import Button from '../../components/Button'
-import CardHeader from '../../components/CardHeader'
-import Table from '../../components/Table/Table'
+import CrudTable from '../../components/CrudTable/CrudTable'
 
 export default function Index() {
     var title = "Categorias"
     var icon = "nc-bullet-list-67"
-    var teste = {
+    var categorias = {
         thead: ['Id', 'Nome'],
         tname: ['id', 'name'],
         tdata: [
-            {id: '1', name:'João'},
-            {id: '2', name:'José'},
-            {id: '3', name:'Maria'},
-            {id: '4', name:'Ana'},
-            {id: '5', name:'Pedro'},
+            {id: '1', name:'Geral'},
+            {id: '2', name:'Comportamento Positivo'},
+            {id: '3', name:'Comportamento Negativo'},
+            {id: '4', name:'Convivência'},
+            {id: '5', name:'Melhorias'},
         ]
     }
 
@@ -28,7 +25,7 @@ export default function Index() {
                     <div className="col-md-12">
                         <div className="card">
                             <div className="card-body">
-                                    <Table data={teste} add={true} name="Categoria" plural="Categorias" />
+                                    <CrudTable data={categorias} name="Categoria" plural="Categorias" />
                             </div>
                         </div>
                     </div>
