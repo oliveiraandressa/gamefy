@@ -12,8 +12,8 @@ export default function Index() {
             {id: '1', name:'Geral'},
             {id: '2', name:'Comportamento Positivo'},
             {id: '3', name:'Comportamento Negativo'},
-            {id: '4', name:'Convivência'},
-            {id: '5', name:'Melhorias'},
+            {id: '4', name:'Tarefas Domésticas'},
+            {id: '5', name:'Iniciativas'},
         ]
     }
 

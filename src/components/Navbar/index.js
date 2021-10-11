@@ -14,7 +14,7 @@ export default function Index(props) {
                         </button>
                     </div>
                     <i className={props.icon + ' lg nc-icon'}></i>
-                    <a className="navbar-brand">&nbsp; {props.title}</a>
+                    <a className="navbar-brand" href="/">&nbsp; {props.title}</a>
                 </div>
             </div>
         </nav>

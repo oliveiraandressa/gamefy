@@ -1,5 +1,4 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom'
+import React from 'react'
 
 export default function Index(props) {    
     return (

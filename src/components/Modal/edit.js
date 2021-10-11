@@ -29,9 +29,3 @@ export default function EditModal(props) {
         </Modal>
     );
 }
-
-function save(type) { 
-}
-
-function back(){
-}

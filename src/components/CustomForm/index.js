@@ -4,10 +4,9 @@ export default function CategoryForm(props) {
 
     var thead = props.thead
     var tname = props.tname
-    var type = props.type
 
     return(
-        props.tname.map((item, index) => {
+        tname.map((item, index) => {
             let hidden = item == 'id' ? true : false
             let data = props.data != null ? props.data[item] : ''
             return (
@@ -20,16 +19,4 @@ export default function CategoryForm(props) {
             );
         })
     )
-}
-
-function save(type) { 
-    //alert(type)
-}
-function back(){
-    //window.location.href = "/categories/"
-    //window.location.replace("/categories/")
-   // this.props.history.push('/')
-    this.props.history.goBack();
-   //this.props.history.goBack()
-    alert("oi")
 }

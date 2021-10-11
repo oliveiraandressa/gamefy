@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {Modal} from 'react-bootstrap'
-import CustomForm from '../CustomForm';
 
 export default function DeleteModal(props) {
     const [modalDeleteShow, setModalDeleteShow] = useState(false);
