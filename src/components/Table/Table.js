@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
-import AddModal from '../Modal/add'
+import AddModal from '../Modal/Add'
 import Head from './Head';
 import Body from './Body';
 
 function Table(props) {
 
   const [modalShow, setModalShow] = useState(false);
+
+  const handleClose = () => setModalShow(false);
+  const handleShow = () => setModalShow(true);
 
   var jsonData = props.data
   var name = props.name

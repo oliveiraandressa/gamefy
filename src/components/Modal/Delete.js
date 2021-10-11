@@ -2,25 +2,34 @@ import React, {useState} from 'react';
 import {Modal} from 'react-bootstrap'
 import CustomForm from '../CustomForm';
 
-export default function AddModal(props) {
-    const [modalShow, setModalShow] = useState(false);
-    const handleClose = () => setModalShow(false);
+export default function DeleteModal(props) {
+    const [modalDeleteShow, setModalDeleteShow] = useState(false);
+    const handleDeleteClose = () => setModalDeleteShow(false);
 
     return (
         <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                Incluir {props.name}
+                Deseja mesmo deletar esse item?
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <form>
                     <div className="row">
-                        <CustomForm data={props.data} thead={props.thead} tname={props.tname} />
+                        <div className="col-sm">
+                            {props.tname.map((item, index) => {
+                                return (
+                                <div className="col-sm"><strong>{props.thead[index]}:</strong> {props.data[item]}
+                                    <br/>
+                                </div> 
+                                )
+                            })}
+                        </div>
+                        
                     </div>
                     <div className="row">
                         <div className="col-md-12 text-right">
-                            <button type="submit" className="btn btn-success" onClick={handleClose}> <i className="fas fa-save"></i> Salvar</button>
+                            <button type="submit" className="btn btn-danger" onClick={handleDeleteClose}> <i className="fas fa-trash"></i> Deletar</button>
                             <a href="#" className="btn btn-secondary ml-2"> <i className="fas fa-times"></i> Cancelar</a>
                         </div>
                     </div>
