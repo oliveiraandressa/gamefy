@@ -1,5 +1,4 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 
 export default function Actions() {
@@ -10,6 +9,7 @@ export default function Actions() {
             <Navbar title={title}  icon={icon}/>
             <div className="content">
                 <div className="row">
+                    oi
                 </div>
             </div>
         </div>

@@ -187,3 +187,15 @@
   outline: none;
   display: none;
 }
+
+/* Custom */
+
+.card{
+  border-radius: 10px;
+  border: none;
+  
+}
+
+.hidden{
+  display: none;
+}
