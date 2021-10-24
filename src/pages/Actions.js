@@ -6,8 +6,10 @@ export default function Actions() {
     var title = "Ações"
     var icon = "nc-spaceship"
     var acoes = {
-        thead: ['Id', 'Nome'],
-        tname: ['id', 'name'],
+        thead: ['Id', 'Nome', 'Categoria','Pontos'], 
+        tname: ['id', 'name', 'category', 'points'],
+        type:['input', 'input', 'select', 'input'],
+        tlists: [[],[],['teste1', 'teste2'],[]],
         tdata: [
             {id: '1', name:'Lavar a louça', category:'Tarefas Domésticas', points:'5'},
             {id: '2', name:'Descumprir um combinado', category:'Comportamento Negativo', points:'-25'},

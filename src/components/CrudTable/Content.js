@@ -1,9 +1,9 @@
 import React from 'react';
 
 function Content(props) {
-  if( props.tname != null) {
+  if( props.data.tname != null) {
     return(
-      props.tname.map((item, index) => {
+      props.data.tname.map((item, index) => {
         return (
           <td>{props.linedata[item]}</td>
         )

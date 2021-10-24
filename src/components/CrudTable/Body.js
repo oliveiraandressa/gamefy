@@ -5,11 +5,11 @@ import Actions from './Actions';
 function Body(props) {
   return (
     <tbody>
-      {props.tdata.map((item, index) => {
+      {props.data.tdata.map((item, index) => {
         return ( 
         <tr>              
-          <Content linedata={item} tname={props.tname} />
-          <Actions data={item} thead={props.thead} tname={props.tname} name={props.name} />
+          <Content linedata={item} data={props.data} />
+          <Actions item={item} data={props.data}  name={props.name} />
         </tr>
       )
     })}

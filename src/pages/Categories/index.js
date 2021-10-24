@@ -8,6 +8,8 @@ export default function Index() {
     var categorias = {
         thead: ['Id', 'Nome'],
         tname: ['id', 'name'],
+        type:['input', 'input'],
+        tlists: [[],[]],
         tdata: [
             {id: '1', name:'Geral'},
             {id: '2', name:'Comportamento Positivo'},
@@ -16,6 +18,7 @@ export default function Index() {
             {id: '5', name:'Iniciativas'},
         ]
     }
+    
 
     return (
         <div className="main-panel">

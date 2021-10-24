@@ -16,9 +16,9 @@ export default function DeleteModal(props) {
                 <form>
                     <div className="row">
                         <div className="col-sm">
-                            {props.tname.map((item, index) => {
+                            {props.data.tname.map((item, index) => {
                                 return (
-                                <div className="col-sm"><strong>{props.thead[index]}:</strong> {props.data[item]}
+                                <div className="col-sm"><strong>{props.data.thead[index]}:</strong> {props.data[item]}
                                     <br/>
                                 </div> 
                                 )

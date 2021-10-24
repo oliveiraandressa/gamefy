@@ -16,7 +16,7 @@ export default function EditModal(props) {
             <Modal.Body>
                 <form>
                     <div className="row">
-                        <CustomForm data={props.data} thead={props.thead} tname={props.tname} />
+                        <CustomForm data={props.data} item={props.item}/>
                     </div>
                     <div className="row">
                         <div className="col-md-12 text-right">

@@ -8,6 +8,8 @@ export default function Users() {
     var usuarios = {
         thead: ['Id', 'Nome'],
         tname: ['id', 'name'],
+        type:['input', 'input'],
+        tlists: [[],[]],
         tdata: [
             {id: '1', name:'João'},
             {id: '2', name:'José'},

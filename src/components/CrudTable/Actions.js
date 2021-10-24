@@ -7,12 +7,12 @@ function Actions(props) {
   const [modalShow, setModalShow] = useState(false);
   const [modalDeleteShow, setModalDeleteShow] = useState(false);
 
-  var thead = props.thead
-  var tname = props.tname
-  var name = props.name
+  var thead = props.data.thead
+  var tname = props.data.tname
+  var name = props.data.name
 
   //index
-  if(props.data != null) {
+  if(props.item != null) {
     return (
       <>
         <td className="td-actions text-right">
@@ -23,8 +23,8 @@ function Actions(props) {
                   <i className="fas fa-times"></i>
               </a>
         </td>
-        <EditModal show={modalShow} onHide={() => setModalShow(false)} data={props.data} thead={thead} tname={tname} name={name}/>
-        <DeleteModal show={modalDeleteShow} onHide={() => setModalDeleteShow(false)} data={props.data} thead={thead} tname={tname} name={name}/>
+        <EditModal show={modalShow} onHide={() => setModalShow(false)} data={props.data} item={props.item} name={name}/>
+        <DeleteModal show={modalDeleteShow} onHide={() => setModalDeleteShow(false)} data={props.data} item={props.item} name={name}/>
       </>
     )
   }

@@ -8,6 +8,8 @@ export default function Rewards() {
     var recompensas = {
         thead: ['Id', 'Nome', 'Preço'],
         tname: ['id', 'name', 'price'],
+        type: ['input', 'input', 'input'],
+        tlists: [[],[],[]],
         tdata: [
             {id: '1', name:'Sessão de filme', price:'5'},
             {id: '2', name:'Passeio no parque', price:'20'},

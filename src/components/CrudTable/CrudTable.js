@@ -28,13 +28,13 @@ function CrudTable(props) {
         <div className="col-sm-12">
           <table className="table table-hover table-striped">
             <Head thead={jsonData.thead} />
-            <Body tdata={jsonData.tdata} thead={jsonData.thead} tname={jsonData.tname} name={name} />
+            <Body data={jsonData} name={name} />
           </table>
         </div>
 
         <AddModal
           show={modalShow} onHide={() => setModalShow(false)}
-          data='' thead={jsonData.thead} tname={jsonData.tname} name={name} plural={plural} />
+          data='' thead={jsonData.thead} tname={jsonData.tname} type={jsonData.type} name={name} plural={plural} />
       </div>);
   }
   else{
