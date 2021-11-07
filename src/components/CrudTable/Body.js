@@ -9,7 +9,7 @@ function Body(props) {
         return ( 
         <tr>              
           <Content linedata={item} data={props.data} />
-          <Actions item={item} data={props.data}  name={props.name} />
+          <Actions item={item} data={props.data}  name={props.name} url={props.url} />
         </tr>
       )
     })}

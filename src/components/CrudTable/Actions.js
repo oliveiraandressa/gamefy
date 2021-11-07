@@ -23,8 +23,8 @@ function Actions(props) {
                   <i className="fas fa-times"></i>
               </a>
         </td>
-        <EditModal show={modalShow} onHide={() => setModalShow(false)} data={props.data} item={props.item} name={name}/>
-        <DeleteModal show={modalDeleteShow} onHide={() => setModalDeleteShow(false)} data={props.data} item={props.item} name={name}/>
+        <EditModal show={modalShow} onHide={() => setModalShow(false)} data={props.data} item={props.item} name={name} url={props.url}/>
+        <DeleteModal show={modalDeleteShow} onHide={() => setModalDeleteShow(false)} data={props.data} item={props.item} name={name} url={props.url}/>
       </>
     )
   }
