@@ -5,7 +5,7 @@ function Head(props) {
     <thead>
         <tr>
           {props.thead.map((item, index) => {
-            return (<th>{item} </th>)
+            return (<th key={index}>{item} </th>)
           })}
         </tr>
     </thead>

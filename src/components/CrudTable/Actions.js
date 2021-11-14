@@ -9,7 +9,7 @@ function Actions(props) {
 
   var thead = props.data.thead
   var tname = props.data.tname
-  var name = props.data.name
+  var name = props.name
 
   //index
   if(props.item != null) {

@@ -7,7 +7,7 @@ function Body(props) {
     <tbody>
       {props.data.tdata.map((item, index) => {
         return ( 
-        <tr>              
+        <tr key={index}>              
           <Content linedata={item} data={props.data} />
           <Actions item={item} data={props.data}  name={props.name} url={props.url} />
         </tr>

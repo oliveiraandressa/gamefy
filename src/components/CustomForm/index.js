@@ -1,28 +1,31 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-export default function CategoryForm(props) {
+export default function CustomForm(props) {
 
-    var thead = props.data.thead
-    var tname = props.data.tname
-    var type = props.data.type
+        return(
+            props.data.tname.map((item, index) => {
+                let hidden = false
+                if(item == 'id'){
+                    hidden = true
+                }
 
-    return(
-        tname.map((item, index) => {
-            let hidden = item == 'id' ? true : false
-            let data = props.item!= null ? props.item : ''
-            return (
-                <div className={"col-sm " + (hidden ? 'hidden' : '')} >
-                    <div className="form-group">
-                        <label >{thead[index]}</label>
-                        {renderField(item, index, props.item[item], type, props.data.tlists[index])}
+                return (
+                    <div className={"col-sm " + (hidden ? 'hidden' : '')} >
+                        <div className="form-group" key={index}>
+                            <label >{props.data.thead[index]}</label>
+                            {renderField(item, index, props.item[item], props.data.type, props.data.tlists[index])}
+                        </div>
                     </div>
-                </div>
-            );
-        })
-    )
+                );
+            })
+        )
+    
 }
 
 function renderField(item, index, data, type, list){
+    if(data == null){
+        data = ''
+    }
     switch(type[index]){
         case 'input':
         return(
@@ -36,16 +39,12 @@ function renderField(item, index, data, type, list){
         break
         case 'select':
         return(
-            <select className="form-control"  value={data} id={item}>
+            <select className="custom-select"  value={data} id={item}>
                 {
                     list.map((item, index) => {
                         return (<option value={item}>{item}</option>)
                     })
                 }
-
-                
-                {/* TODO: ver melhor forma de trazer as options */}
-                {/* TODO: arrumar o add */}
             </select>
         )
         break

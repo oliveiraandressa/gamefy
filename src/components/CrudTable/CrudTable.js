@@ -34,8 +34,7 @@ function CrudTable(props) {
         </div>
 
         <AddModal
-          show={modalShow} onHide={() => setModalShow(false)}
-          data='' thead={jsonData.thead} tname={jsonData.tname} type={jsonData.type} name={name} plural={plural} url={url} />
+          show={modalShow} onHide={() => setModalShow(false)} data={jsonData} name={name} url={url} />
       </div>);
   }
   else{
